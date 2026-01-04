@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle Financeiro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>💰 Minhas Finanças</h2>
+
+        <div class="inc-exp-container">
+            <div>
+                <h4>Receitas</h4>
+                <p id="money-plus" class="money plus">+ R$0.00</p>
+            </div>
+            <div>
+                <h4>Despesas</h4>
+                <p id="money-minus" class="money minus">- R$0.00</p>
+            </div>
+        </div>
+
+        <h3>Histórico</h3>
+        <ul id="list" class="list">
+        </ul>
+
+        <h3>Adicionar Transação</h3>
+        <form id="form">
+            <div class="form-control">
+                <label for="text">Nome</label>
+                <input type="text" id="text" placeholder="Ex: Salário, Luz..." />
+            </div>
+            <div class="form-control">
+                <label for="amount">Valor <br />
+                    <small>(negativo = despesa, positivo = receita)</small>
+                </label>
+                <input type="number" id="amount" placeholder="Ex: -200 ou 500" />
+            </div>
+            <button class="btn">Adicionar</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
